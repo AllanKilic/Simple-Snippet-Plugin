@@ -1,0 +1,21 @@
+.ssnip-radio { display: block; margin: 4px 0; }
+.ssnip-rules .ssnip-radio { display: inline-block; margin-right: 18px; }
+.ssnip-rules h4 { margin: 18px 0 8px; }
+.ssnip-selected[hidden] { display: none; }
+.ssnip-checks { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px 12px; margin-bottom: 10px; }
+.ssnip-checks code { font-size: 11px; opacity: .7; }
+.ssnip-inline { display: block; margin: 6px 0; }
+
+.ssnip-picker { position: relative; max-width: 640px; }
+.ssnip-picker .ssnip-search { width: 100%; }
+.ssnip-results { position: absolute; z-index: 20; left: 0; right: 0; margin: 2px 0 0; max-height: 260px; overflow: auto; background: #fff; border: 1px solid #c3c4c7; box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+.ssnip-results li { margin: 0; padding: 7px 10px; cursor: pointer; }
+.ssnip-results li:hover, .ssnip-results li:focus { background: #f0f6fc; outline: none; }
+.ssnip-results li.is-added { color: #787c82; }
+.ssnip-results li.is-added::after { content: " ✓"; }
+.ssnip-results li.ssnip-empty { cursor: default; color: #787c82; }
+.ssnip-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; }
+.ssnip-chips li { margin: 0; padding: 3px 4px 3px 10px; background: #f0f0f1; border: 1px solid #dcdcde; border-radius: 12px; display: inline-flex; align-items: center; gap: 4px; }
+.ssnip-remove { border: 0; background: none; cursor: pointer; font-size: 16px; line-height: 1; color: #787c82; padding: 0 4px; }
+.ssnip-remove:hover { color: #d63638; }
+#ssnip_code .CodeMirror { height: 380px; border: 1px solid #dcdcde; }
